@@ -1,0 +1,8 @@
+<cache>
+    <configuration>
+        <enabled>true</enabled>
+        <remote enabled="true" saveToRemote="true" id="cache">
+            <url>https://ge-helm-standalone-unstable.grdev.net/cache-maven</url>
+        </remote>
+    </configuration>
+</cache>
