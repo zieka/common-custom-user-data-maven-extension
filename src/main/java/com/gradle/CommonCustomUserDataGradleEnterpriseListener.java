@@ -42,4 +42,8 @@ public final class CommonCustomUserDataGradleEnterpriseListener implements Gradl
         GroovyScriptUserData.evaluate(session, api, logger);
     }
 
+    public void causeRemoteCacheMiss() {
+        logger.info("I caused a remote cache miss!");
+    }
+
 }
