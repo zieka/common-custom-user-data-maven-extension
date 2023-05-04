@@ -9,7 +9,7 @@
   </server>
   <buildScan>
     <capture>
-        <goalInputFiles>true</goalInputFiles>
+      <goalInputFiles>true</goalInputFiles>
     </capture>
     <backgroundBuildScanUpload>#{isFalse(env['GITHUB_ACTIONS'])}</backgroundBuildScanUpload>
     <publish>ALWAYS</publish>
@@ -18,9 +18,10 @@
       <ipAddresses>#{{'0.0.0.0'}}</ipAddresses>
     </obfuscation>
   </buildScan>
-    <buildCache>
-        <remote>
-            <enabled>true</enabled>
-        </remote>
-    </buildCache>
+  <buildCache>
+    <remote>
+      <enabled>true</enabled>
+      <storeEnabled>false</storeEnabled>
+    </remote>
+  </buildCache>
 </gradleEnterprise>
